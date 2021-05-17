@@ -1,5 +1,5 @@
-body {
-  max-height: 90vh;
+html {
+  height: 100%;
 }
 
 h1#header {
