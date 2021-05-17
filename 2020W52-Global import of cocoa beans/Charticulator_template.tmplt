@@ -1,0 +1,984 @@
+{
+  "specification": {
+    "_id": "6gjyfbonjet",
+    "classID": "chart.rectangle",
+    "properties": {
+      "name": "Connected_scatterplot",
+      "backgroundColor": null,
+      "backgroundOpacity": 1,
+      "enableContextMenu": true,
+      "exposed": true
+    },
+    "mappings": {
+      "marginTop": {
+        "type": "value",
+        "value": 80
+      },
+      "marginLeft": {
+        "type": "value",
+        "value": 83.1345250206339
+      },
+      "marginRight": {
+        "type": "value",
+        "value": 36.27975957570404
+      }
+    },
+    "glyphs": [
+      {
+        "_id": "degu3km6utp",
+        "classID": "glyph.rectangle",
+        "properties": {
+          "name": "Glyph"
+        },
+        "table": "Global_import_of_cocoa_beans",
+        "marks": [
+          {
+            "_id": "1gypf5vyarq",
+            "classID": "mark.anchor",
+            "properties": {
+              "name": "Anchor"
+            },
+            "mappings": {
+              "x": {
+                "type": "parent",
+                "parentAttribute": "icx"
+              },
+              "y": {
+                "type": "parent",
+                "parentAttribute": "icy"
+              }
+            }
+          },
+          {
+            "_id": "2n4lwpkudd4",
+            "classID": "mark.symbol",
+            "properties": {
+              "enableTooltips": true,
+              "enableContextMenu": true,
+              "enableSelection": true,
+              "visible": true,
+              "name": "circles",
+              "exposed": true
+            },
+            "mappings": {
+              "fill": {
+                "type": "scale",
+                "table": "Global_import_of_cocoa_beans",
+                "expression": "first(Region)",
+                "valueType": "string",
+                "scale": "6m9hyln57pb",
+                "attribute": "fill"
+              },
+              "strokeWidth": {
+                "type": "value",
+                "value": 1
+              },
+              "opacity": {
+                "type": "value",
+                "value": 1
+              },
+              "visible": {
+                "type": "value",
+                "value": true
+              },
+              "x": {
+                "type": "parent",
+                "parentAttribute": "icx"
+              },
+              "y": {
+                "type": "parent",
+                "parentAttribute": "icy"
+              }
+            }
+          },
+          {
+            "_id": "tcvwb48qzf",
+            "classID": "mark.text",
+            "properties": {
+              "enableTooltips": true,
+              "enableContextMenu": true,
+              "enableSelection": true,
+              "alignment": {
+                "x": "left",
+                "y": "middle",
+                "xMargin": 5,
+                "yMargin": 5
+              },
+              "rotation": 0,
+              "visible": true,
+              "name": "line_label",
+              "exposed": true
+            },
+            "mappings": {
+              "text": {
+                "type": "text",
+                "table": "Global_import_of_cocoa_beans",
+                "textExpression": "${first(Region)}"
+              },
+              "fontFamily": {
+                "type": "value",
+                "value": "Segoe UI"
+              },
+              "fontSize": {
+                "type": "value",
+                "value": 14
+              },
+              "color": {
+                "type": "scale",
+                "table": "Global_import_of_cocoa_beans",
+                "expression": "first(Region)",
+                "valueType": "string",
+                "scale": "6m9hyln57pb",
+                "attribute": "color"
+              },
+              "opacity": {
+                "type": "value",
+                "value": 1
+              },
+              "visible": {
+                "type": "scale",
+                "table": "Global_import_of_cocoa_beans",
+                "expression": "first(Year)",
+                "valueType": "string",
+                "scale": "980s229fbi",
+                "attribute": "visible"
+              },
+              "x": {
+                "type": "parent",
+                "parentAttribute": "icx"
+              },
+              "y": {
+                "type": "parent",
+                "parentAttribute": "icy"
+              }
+            }
+          }
+        ],
+        "mappings": {},
+        "constraints": []
+      }
+    ],
+    "elements": [
+      {
+        "_id": "3ydgk6q9ket",
+        "classID": "links.through",
+        "mappings": {
+          "color": {
+            "type": "scale",
+            "table": "Global_import_of_cocoa_beans",
+            "expression": "first(Region)",
+            "valueType": "string",
+            "scale": "6m9hyln57pb",
+            "attribute": "fill"
+          },
+          "opacity": {
+            "type": "value",
+            "value": 1
+          }
+        },
+        "properties": {
+          "name": "Lines",
+          "linkMarkType": "",
+          "visible": true,
+          "linkType": "line",
+          "interpolationType": "line",
+          "anchor1": [
+            {
+              "x": {
+                "element": "2n4lwpkudd4",
+                "attribute": "x"
+              },
+              "y": {
+                "element": "2n4lwpkudd4",
+                "attribute": "y"
+              },
+              "direction": {
+                "x": 1,
+                "y": 0
+              }
+            }
+          ],
+          "anchor2": [
+            {
+              "x": {
+                "element": "2n4lwpkudd4",
+                "attribute": "x"
+              },
+              "y": {
+                "element": "2n4lwpkudd4",
+                "attribute": "y"
+              },
+              "direction": {
+                "x": -1,
+                "y": 0
+              }
+            }
+          ],
+          "linkThrough": {
+            "plotSegment": "k9pns9yl7e",
+            "facetExpressions": [
+              "Region"
+            ]
+          },
+          "curveness": 30,
+          "exposed": true
+        }
+      },
+      {
+        "_id": "k9pns9yl7e",
+        "classID": "plot-segment.cartesian",
+        "glyph": "degu3km6utp",
+        "table": "Global_import_of_cocoa_beans",
+        "filter": null,
+        "mappings": {
+          "x1": {
+            "type": "parent",
+            "parentAttribute": "x1"
+          },
+          "y1": {
+            "type": "parent",
+            "parentAttribute": "y1"
+          },
+          "x2": {
+            "type": "parent",
+            "parentAttribute": "x2"
+          },
+          "y2": {
+            "type": "parent",
+            "parentAttribute": "y2"
+          }
+        },
+        "properties": {
+          "name": "PlotSegment",
+          "visible": true,
+          "marginX1": 0,
+          "marginY1": 0,
+          "marginX2": 0,
+          "marginY2": 0,
+          "sublayout": {
+            "type": "overlap",
+            "order": null,
+            "ratioX": 0.1,
+            "ratioY": 0.1,
+            "align": {
+              "x": "start",
+              "y": "start"
+            },
+            "grid": {
+              "direction": "x",
+              "xCount": null,
+              "yCount": null
+            },
+            "packing": {
+              "gravityX": 0.1,
+              "gravityY": 0.1
+            },
+            "jitter": {
+              "vertical": true,
+              "horizontal": true
+            }
+          },
+          "xData": {
+            "type": "categorical",
+            "expression": "first(Year)",
+            "rawExpression": "first(Year)",
+            "valueType": "string",
+            "gapRatio": 0.1,
+            "visible": true,
+            "side": "default",
+            "style": {
+              "tickColor": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "lineColor": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "fontFamily": "Segoe UI",
+              "fontSize": 12,
+              "tickSize": 5,
+              "wordWrap": false,
+              "gridlineStyle": "none",
+              "gridlineColor": {
+                "r": 234,
+                "g": 234,
+                "b": 234
+              },
+              "gridlineWidth": 1
+            },
+            "dataKind": "ordinal",
+            "orderMode": "alphabetically",
+            "autoDomainMax": true,
+            "autoDomainMin": true,
+            "categories": [
+              "2015",
+              "2016",
+              "2017",
+              "2018",
+              "2019"
+            ]
+          },
+          "yData": {
+            "type": "numerical",
+            "expression": "sum(`Import in tonnes`)",
+            "rawExpression": "first(`Import in tonnes`)",
+            "valueType": "number",
+            "gapRatio": 0.1,
+            "visible": true,
+            "side": "default",
+            "style": {
+              "tickColor": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "lineColor": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "fontFamily": "Segoe UI",
+              "fontSize": 12,
+              "tickSize": 5,
+              "wordWrap": false,
+              "gridlineStyle": "none",
+              "gridlineColor": {
+                "r": 234,
+                "g": 234,
+                "b": 234
+              },
+              "gridlineWidth": 1
+            },
+            "numericalMode": "linear",
+            "dataKind": "numerical",
+            "autoDomainMax": true,
+            "autoDomainMin": true,
+            "domainMin": 400000,
+            "domainMax": 2600000
+          },
+          "exposed": true
+        }
+      },
+      {
+        "_id": "1yi7zy1m90z",
+        "classID": "mark.text",
+        "properties": {
+          "name": "Title",
+          "visible": true,
+          "alignment": {
+            "x": "left",
+            "y": "top",
+            "xMargin": 0,
+            "yMargin": 30
+          },
+          "rotation": 0,
+          "exposed": true
+        },
+        "mappings": {
+          "x": {
+            "type": "parent",
+            "parentAttribute": "x1"
+          },
+          "text": {
+            "type": "value",
+            "value": "Comparing global import of cocoa beans by region"
+          },
+          "fontSize": {
+            "type": "value",
+            "value": 24
+          },
+          "color": {
+            "type": "value",
+            "value": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
+          }
+        }
+      }
+    ],
+    "scales": [
+      {
+        "_id": "6m9hyln57pb",
+        "classID": "scale.categorical<string,color>",
+        "properties": {
+          "enableTooltips": true,
+          "enableContextMenu": true,
+          "enableSelection": true,
+          "name": "Scale1",
+          "mapping": {
+            "Asia & Oceania": {
+              "r": 33,
+              "g": 113,
+              "b": 181
+            },
+            "Europe": {
+              "r": 233,
+              "g": 30,
+              "b": 99
+            },
+            "Americas": {
+              "r": 255,
+              "g": 193,
+              "b": 7
+            }
+          },
+          "autoDomainMax": true,
+          "autoDomainMin": true
+        },
+        "mappings": {},
+        "inputType": "string",
+        "outputType": "color"
+      },
+      {
+        "_id": "980s229fbi",
+        "classID": "scale.categorical<string,boolean>",
+        "properties": {
+          "enableTooltips": true,
+          "enableContextMenu": true,
+          "enableSelection": true,
+          "name": "Scale3",
+          "mapping": {
+            "2015": false,
+            "2016": false,
+            "2017": false,
+            "2018": false,
+            "2019": true
+          },
+          "autoDomainMax": true,
+          "autoDomainMin": true
+        },
+        "mappings": {},
+        "inputType": "string",
+        "outputType": "boolean"
+      }
+    ],
+    "scaleMappings": [
+      {
+        "type": "scale",
+        "table": "Global_import_of_cocoa_beans",
+        "expression": "first(Region)",
+        "valueType": "string",
+        "scale": "6m9hyln57pb",
+        "attribute": "fill"
+      },
+      {
+        "type": "scale",
+        "table": "Global_import_of_cocoa_beans",
+        "expression": "first(Year)",
+        "valueType": "string",
+        "scale": "980s229fbi",
+        "attribute": "visible"
+      }
+    ],
+    "constraints": [],
+    "resources": []
+  },
+  "defaultAttributes": {
+    "1gypf5vyarq": {
+      "x": 0,
+      "y": 0
+    },
+    "2n4lwpkudd4": {
+      "x": 0,
+      "y": 0,
+      "size": 12,
+      "strokeWidth": 0.2,
+      "opacity": 0.2
+    },
+    "tcvwb48qzf": {
+      "x": 0,
+      "y": 0,
+      "fontSize": 3.5,
+      "opacity": 0.25
+    },
+    "1yi7zy1m90z": {
+      "x": -91.71636874484153,
+      "y": 75.63720240424296,
+      "fontSize": 6,
+      "opacity": 0.25
+    }
+  },
+  "tables": [
+    {
+      "name": "Global_import_of_cocoa_beans",
+      "columns": [
+        {
+          "displayName": "Region",
+          "name": "Region",
+          "type": "string",
+          "metadata": {
+            "kind": "categorical",
+            "orderMode": "alphabetically",
+            "examples": "Asia & Oceania, Europe, Americas"
+          }
+        },
+        {
+          "displayName": "Year",
+          "name": "Year",
+          "type": "string",
+          "metadata": {
+            "unit": "__year",
+            "kind": "ordinal",
+            "orderMode": "alphabetically",
+            "examples": "2015, 2016, 2017"
+          }
+        },
+        {
+          "displayName": "Import in tonnes",
+          "name": "Import in tonnes",
+          "type": "number",
+          "metadata": {
+            "kind": "numerical",
+            "examples": "549000, 565000, 586000"
+          }
+        }
+      ]
+    }
+  ],
+  "inference": [
+    {
+      "objectID": "k9pns9yl7e",
+      "dataSource": {
+        "table": "Global_import_of_cocoa_beans"
+      },
+      "axis": {
+        "expression": "first(Year)",
+        "type": "categorical",
+        "style": {
+          "tickColor": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "lineColor": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "fontFamily": "Segoe UI",
+          "fontSize": 12,
+          "tickSize": 5,
+          "wordWrap": false,
+          "gridlineStyle": "none",
+          "gridlineColor": {
+            "r": 234,
+            "g": 234,
+            "b": 234
+          },
+          "gridlineWidth": 1
+        },
+        "orderMode": "alphabetically",
+        "rawExpression": "first(Year)",
+        "property": "xData"
+      },
+      "autoDomainMin": true,
+      "autoDomainMax": true
+    },
+    {
+      "objectID": "k9pns9yl7e",
+      "dataSource": {
+        "table": "Global_import_of_cocoa_beans"
+      },
+      "axis": {
+        "expression": "sum(`Import in tonnes`)",
+        "type": "numerical",
+        "style": {
+          "tickColor": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "lineColor": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "fontFamily": "Segoe UI",
+          "fontSize": 12,
+          "tickSize": 5,
+          "wordWrap": false,
+          "gridlineStyle": "none",
+          "gridlineColor": {
+            "r": 234,
+            "g": 234,
+            "b": 234
+          },
+          "gridlineWidth": 1
+        },
+        "rawExpression": "first(`Import in tonnes`)",
+        "property": "yData"
+      },
+      "autoDomainMin": true,
+      "autoDomainMax": true
+    },
+    {
+      "objectID": "6m9hyln57pb",
+      "autoDomainMax": true,
+      "autoDomainMin": true,
+      "scale": {
+        "classID": "scale.categorical<string,color>",
+        "expressions": [
+          "first(Region)"
+        ],
+        "properties": {
+          "mapping": "mapping"
+        }
+      },
+      "dataSource": {
+        "table": "Global_import_of_cocoa_beans"
+      }
+    },
+    {
+      "objectID": "980s229fbi",
+      "autoDomainMax": true,
+      "autoDomainMin": true,
+      "scale": {
+        "classID": "scale.categorical<string,boolean>",
+        "expressions": [
+          "first(Year)"
+        ],
+        "properties": {
+          "mapping": "mapping"
+        }
+      },
+      "dataSource": {
+        "table": "Global_import_of_cocoa_beans"
+      }
+    }
+  ],
+  "properties": [
+    {
+      "objectID": "3ydgk6q9ket",
+      "target": {
+        "attribute": "opacity"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Lines/opacity"
+    },
+    {
+      "objectID": "k9pns9yl7e",
+      "target": {
+        "property": {
+          "property": "xData",
+          "field": "style",
+          "subfield": "tickSize"
+        }
+      },
+      "type": "number",
+      "default": 5,
+      "displayName": "PlotSegment/xData.style.tickSize"
+    },
+    {
+      "objectID": "k9pns9yl7e",
+      "target": {
+        "property": {
+          "property": "xData",
+          "field": "style",
+          "subfield": "fontSize"
+        }
+      },
+      "type": "number",
+      "default": 12,
+      "displayName": "PlotSegment/xData.style.fontSize"
+    },
+    {
+      "objectID": "k9pns9yl7e",
+      "target": {
+        "property": {
+          "property": "xData",
+          "field": "style",
+          "subfield": "fontFamily"
+        }
+      },
+      "type": "font-family",
+      "default": "Segoe UI",
+      "displayName": "PlotSegment/xData.style.fontFamily"
+    },
+    {
+      "objectID": "k9pns9yl7e",
+      "target": {
+        "property": {
+          "property": "xData",
+          "field": "style",
+          "subfield": "lineColor"
+        }
+      },
+      "type": "color",
+      "default": "#000000",
+      "displayName": "PlotSegment/xData.style.lineColor"
+    },
+    {
+      "objectID": "k9pns9yl7e",
+      "target": {
+        "property": {
+          "property": "xData",
+          "field": "style",
+          "subfield": "tickColor"
+        }
+      },
+      "type": "color",
+      "default": "#000000",
+      "displayName": "PlotSegment/xData.style.tickColor"
+    },
+    {
+      "objectID": "k9pns9yl7e",
+      "target": {
+        "property": {
+          "property": "xData",
+          "field": "tickFormat"
+        }
+      },
+      "type": "text",
+      "default": null,
+      "displayName": "PlotSegment/xData.tickFormat"
+    },
+    {
+      "objectID": "k9pns9yl7e",
+      "target": {
+        "property": {
+          "property": "xData",
+          "field": "tickDataExpression"
+        }
+      },
+      "type": "text",
+      "default": null,
+      "displayName": "PlotSegment/xData.tickDataExpression"
+    },
+    {
+      "objectID": "k9pns9yl7e",
+      "target": {
+        "property": {
+          "property": "yData",
+          "field": "style",
+          "subfield": "tickSize"
+        }
+      },
+      "type": "number",
+      "default": 5,
+      "displayName": "PlotSegment/yData.style.tickSize"
+    },
+    {
+      "objectID": "k9pns9yl7e",
+      "target": {
+        "property": {
+          "property": "yData",
+          "field": "style",
+          "subfield": "fontSize"
+        }
+      },
+      "type": "number",
+      "default": 12,
+      "displayName": "PlotSegment/yData.style.fontSize"
+    },
+    {
+      "objectID": "k9pns9yl7e",
+      "target": {
+        "property": {
+          "property": "yData",
+          "field": "style",
+          "subfield": "fontFamily"
+        }
+      },
+      "type": "font-family",
+      "default": "Segoe UI",
+      "displayName": "PlotSegment/yData.style.fontFamily"
+    },
+    {
+      "objectID": "k9pns9yl7e",
+      "target": {
+        "property": {
+          "property": "yData",
+          "field": "style",
+          "subfield": "lineColor"
+        }
+      },
+      "type": "color",
+      "default": "#000000",
+      "displayName": "PlotSegment/yData.style.lineColor"
+    },
+    {
+      "objectID": "k9pns9yl7e",
+      "target": {
+        "property": {
+          "property": "yData",
+          "field": "style",
+          "subfield": "tickColor"
+        }
+      },
+      "type": "color",
+      "default": "#000000",
+      "displayName": "PlotSegment/yData.style.tickColor"
+    },
+    {
+      "objectID": "k9pns9yl7e",
+      "target": {
+        "property": {
+          "property": "yData",
+          "field": "tickFormat"
+        }
+      },
+      "type": "text",
+      "default": null,
+      "displayName": "PlotSegment/yData.tickFormat"
+    },
+    {
+      "objectID": "k9pns9yl7e",
+      "target": {
+        "property": {
+          "property": "yData",
+          "field": "tickDataExpression"
+        }
+      },
+      "type": "text",
+      "default": null,
+      "displayName": "PlotSegment/yData.tickDataExpression"
+    },
+    {
+      "objectID": "k9pns9yl7e",
+      "target": {
+        "property": {
+          "property": "xData",
+          "field": "categories"
+        }
+      },
+      "type": "enum",
+      "default": "ascending",
+      "displayName": "PlotSegment/xData.categories"
+    },
+    {
+      "objectID": "k9pns9yl7e",
+      "target": {
+        "property": {
+          "property": "yData",
+          "field": "categories"
+        }
+      },
+      "type": "enum",
+      "default": "ascending",
+      "displayName": "PlotSegment/yData.categories"
+    },
+    {
+      "objectID": "2n4lwpkudd4",
+      "target": {
+        "attribute": "visible"
+      },
+      "type": "boolean",
+      "default": true,
+      "displayName": "circles/visible"
+    },
+    {
+      "objectID": "2n4lwpkudd4",
+      "target": {
+        "attribute": "strokeWidth"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "circles/strokeWidth"
+    },
+    {
+      "objectID": "2n4lwpkudd4",
+      "target": {
+        "attribute": "opacity"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "circles/opacity"
+    },
+    {
+      "objectID": "tcvwb48qzf",
+      "target": {
+        "attribute": "fontFamily"
+      },
+      "type": "font-family",
+      "default": "Segoe UI",
+      "displayName": "line_label/fontFamily"
+    },
+    {
+      "objectID": "tcvwb48qzf",
+      "target": {
+        "attribute": "fontSize"
+      },
+      "type": "number",
+      "default": 14,
+      "displayName": "line_label/fontSize"
+    },
+    {
+      "objectID": "tcvwb48qzf",
+      "target": {
+        "attribute": "opacity"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "line_label/opacity"
+    },
+    {
+      "objectID": "1yi7zy1m90z",
+      "target": {
+        "attribute": "fontSize"
+      },
+      "type": "number",
+      "default": 24,
+      "displayName": "Title/fontSize"
+    },
+    {
+      "objectID": "1yi7zy1m90z",
+      "target": {
+        "attribute": "color"
+      },
+      "type": "color",
+      "default": "#000000",
+      "displayName": "Title/color"
+    },
+    {
+      "objectID": "1yi7zy1m90z",
+      "target": {
+        "attribute": "text"
+      },
+      "type": "text",
+      "default": "Comparing global import of cocoa beans by region",
+      "displayName": "Title/text"
+    },
+    {
+      "objectID": "6gjyfbonjet",
+      "target": {
+        "attribute": "marginLeft"
+      },
+      "type": "number",
+      "default": 83.1345250206339,
+      "displayName": "Connected_scatterplot/marginLeft"
+    },
+    {
+      "objectID": "6gjyfbonjet",
+      "target": {
+        "attribute": "marginRight"
+      },
+      "type": "number",
+      "default": 36.27975957570404,
+      "displayName": "Connected_scatterplot/marginRight"
+    },
+    {
+      "objectID": "6gjyfbonjet",
+      "target": {
+        "attribute": "marginTop"
+      },
+      "type": "number",
+      "default": 80,
+      "displayName": "Connected_scatterplot/marginTop"
+    },
+    {
+      "objectID": "6gjyfbonjet",
+      "target": {
+        "attribute": "marginBottom"
+      },
+      "type": "number",
+      "default": 50,
+      "displayName": "Connected_scatterplot/marginBottom"
+    }
+  ]
+}

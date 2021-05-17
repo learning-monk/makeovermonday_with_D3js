@@ -1,0 +1,14 @@
+body {
+  max-height: 90vh;
+}
+
+h1#header {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 24px;
+}
+
+p#subheader {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
