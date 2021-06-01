@@ -1,0 +1,55 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+}
+
+h1 {
+  color: #877f7f;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#selectYearRange {
+  width: 30%;
+  float: left;
+  text-anchor: middle;
+}
+
+#yearDropdown {
+  display: inline-block;
+}
+
+#yearLabel {
+  margin-left: 25px;
+}
+
+#selectCategory {
+  width: 25%;
+  float: right;
+  background-color: aliceblue;
+  text-align: center;
+  text-anchor: middle;
+}
+
+#xAxis-Left .tick:nth-child(7) text {
+  /* visibility: hidden; */
+  color: red;
+  font-size: 13px;
+}
+
+#xAxis-Right .tick:nth-child(7) text {
+  /* visibility: hidden; */
+  color: red;
+  font-size: 13px;
+}
+
+#placeholder {
+  text-align: center;
+  text-decoration: underline;
+  color: royalblue;
+  font-weight: bold;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How much sugar are we consuming?</title>
+    <!--Load D3.js library-->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <!--Link css stylesheet-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>How much sugar are we consuming?</h1>
+    <div>
+      <span id="selectYearRange">
+        <span id="yearLabel">Select year range:</span>
+        <span id="dropdownBox"></span>
+      </span>
+      <span id="selectCategory">
+        <span id="categoryLabel">Toggle Category:</span>
+        <span id="adults">
+          <input type="radio" id="_adults" name="category" value="Adults" />
+          <label for="_adults">Adults</label>
+        </span>
+        <span id="children">
+          <input type="radio" id="_children" name="category" value="Children" />
+          <label for="_children">Children</label>
+        </span>
+      </span>
+    </div>
+    <div>
+      <p id="placeholder">Select category to begin ======></p>
+    </div>
+    <div id="chartContainer"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
