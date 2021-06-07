@@ -14,4 +14,4 @@ _Here is my version of the chart:_
 
 ![my data viz](./misc/myViz.PNG)
 
-_D3.js chart can be found here:_ [codepen](https://codepen.io/ksp585/full/xxqpMjQ)
+_D3.js chart can be found here:_ [codepen](https://codepen.io/ksp585/full/dyvKXWw)
