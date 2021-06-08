@@ -34,7 +34,7 @@ d3.csv("../data/MM27MentalHealth-Transformed.csv").then(data => {
   // Align SVG to the center of the page
   d3.select("#chartContainer").attr("align", "center");
   
-  // Append svg to horizontal bar DIV
+  // Append svg to DIV
   const svg = d3.select("#chartContainer")
     .append("svg")
       .attr("preserveAspectRatio", "xMinYMin meet")
@@ -176,7 +176,7 @@ d3.csv("../data/MM27MentalHealth-Transformed.csv").then(data => {
   mainG
     .append("text")
     .attr("text-anchor", "end")
-    .attr("x", 50)
+    .attr("x", margins.left)
     .attr("y", 0)
     .text("Men")
     .attr("font-size", 18);   
@@ -184,7 +184,7 @@ d3.csv("../data/MM27MentalHealth-Transformed.csv").then(data => {
   mainG
     .append("text")
     .attr("text-anchor", "end")
-    .attr("x", innerWidth-40)
+    .attr("x", innerWidth)
     .attr("y", 0)
     .text("Women")
     .attr("font-size", 18);      
