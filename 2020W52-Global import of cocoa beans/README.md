@@ -1,4 +1,4 @@
-# MakeoverMonday 2020 week 52 challenge
+# MakeoverMonday challenge
 
 This is 2020 week 52 challenge posted on [MakeoverMonday](https://www.makeovermonday.co.uk/data/data-sets-2020/) website.
 

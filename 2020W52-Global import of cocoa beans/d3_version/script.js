@@ -36,43 +36,43 @@ d3.csv("../data/Global_import_of_cocoa_beans_transformed.csv").then(data => {
 
   // Set color scale. One color per group
   const colorScale = d3.scaleOrdinal()
-                      .domain(regions)
-                      .range(d3.schemeSet2);
+    .domain(regions)
+    .range(d3.schemeSet2);
 
   // Set up xScale
   const xScale = d3.scaleLinear()
-                  .domain(d3.extent(data, d => d.Year))
-                  .rangeRound([0, innerWidth]);
+    .domain(d3.extent(data, d => d.Year))
+    .rangeRound([0, innerWidth]);
   
                                                         
   // Set up yScale
   const yScale = d3.scaleLinear()
-                  .domain([d3.min(data, d => Math.min(d.Americas, d["Asia & Oceania"], d.Europe)), d3.max(data, d => Math.max(d.Americas, d["Asia & Oceania"], d.Europe))])
-                  .rangeRound([innerHeight, 0])
-                  .nice();
+    .domain([d3.min(data, d => Math.min(d.Americas, d["Asia & Oceania"], d.Europe)), d3.max(data, d => Math.max(d.Americas, d["Asia & Oceania"], d.Europe))])
+    .rangeRound([innerHeight, 0])
+    .nice();
  
   // Append svg object to the div container
   const svg = d3.select("#svg-container")
-  .append("svg")
-    .attr("preserveAspectRatio", "xMinYMin meet")
-    .attr("width", width)
-    .attr("height", height);
+    .append("svg")
+      .attr("preserveAspectRatio", "xMinYMin meet")
+      .attr("width", width)
+      .attr("height", height);
 
   const mainG = svg.append("g")
-                  .attr("transform", `translate(${margins.left}, ${margins.top})`);
+    .attr("transform", `translate(${margins.left}, ${margins.top})`);
 
   // Add x-axis
   mainG
-  .append("g")
-    .attr("id", "xAxis")
-    .call(d3.axisBottom(xScale).tickFormat(d3.format(".0f")).tickValues(d3.range(d3.min(data, d => d.Year),d3.max(data, d => d.Year)+1,1)))
-    .attr("transform", `translate(0, ${innerHeight})`);
+    .append("g")
+      .attr("id", "xAxis")
+      .call(d3.axisBottom(xScale).tickFormat(d3.format(".0f")).tickValues(d3.range(d3.min(data, d => d.Year),d3.max(data, d => d.Year)+1,1)))
+      .attr("transform", `translate(0, ${innerHeight})`);
 
   // Add y-axis
   mainG
-  .append("g")
-    .attr("id", "yAxis")
-    .call(d3.axisLeft(yScale));
+    .append("g")
+      .attr("id", "yAxis")
+      .call(d3.axisLeft(yScale));
     
   // Add lines
   const line = d3.line()

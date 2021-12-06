@@ -1,6 +1,6 @@
 # MakeoverMonday with D3.js
 
-I am starting this as a weekend project and every week I will be posting a [MakeoverMonday](https://www.makeovermonday.co.uk/data/) chart created using [D3.js](https://d3js.org/).
+I am starting this as a weekend project and I will keep posting a [MakeoverMonday](https://www.makeovermonday.co.uk/data/) chart created using [D3.js](https://d3js.org/).
 
 For those of you who are not aware of [MakeoverMonday](https://www.makeovermonday.co.uk/), it is a wonderful data visualization initiative started by [Andy Kriebel](https://www.linkedin.com/in/andykriebel/) in collaboration with [Eva Murray](https://www.linkedin.com/in/evamurray1/). Every week, a dataset along with a visualization which has a need for improvement will be posted on **MakeoverMonday** website. Though this is famous among Tableau users, participants are encouraged to use data viz tool of their choice to build and post improved version of their charts. According to Andy, the main objective of this initiative is to encourage _learning_, _practice_ and _reinforce_ data visualization best practices. Thank you Andy and Eva.
 
